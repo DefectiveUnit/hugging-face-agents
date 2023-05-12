@@ -1,0 +1,9 @@
+creds.py
+*.pdf
+*.faiss
+*.pkl
+*.docx
+*.pyc
+*.bin
+summaries/*.txt
+0.14.1
