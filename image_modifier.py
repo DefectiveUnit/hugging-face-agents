@@ -13,4 +13,5 @@ image = Image.open('path/to/image.jpg')
 image.show()
 
 updated_image = agent.run("Transform the image in `image` to add fire to it.", image=image)
+updated_image.save("images/updated_image.png")
 updated_image.show()
