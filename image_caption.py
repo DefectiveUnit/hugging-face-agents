@@ -9,9 +9,7 @@ from PIL import Image
 # Either use openai agent, or
 agent = OpenAiAgent(model="text-davinci-003", api_key=openai_key)
 
-image = Image.open("images/generated_image.png")
+image = Image.open('path/to/image.jpg')
 image.show()
 
-updated_image = agent.run("Transform the image in `image` to add fire to it.", image=image)
-updated_image.save("images/updated_image.png")
-updated_image.show()
+caption = agent.run("Caption the image in `image`.", image=image)
